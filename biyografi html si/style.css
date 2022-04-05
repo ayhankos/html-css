@@ -12,18 +12,70 @@
     height: 80px;
     background: rgba(22, 112,214,0.4);
 }
-.navbar .logo{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px;
-}
 .navbar .logo a{
     text-decoration: none;
     font-size: 30px;
     font-family: sans-serif;
     color: #f3f3f3;
 }
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
 
 .navbar ul{
     float: right;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: #27b0b7;
+    border-radius: 2px;
+}
+
+.container .center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family:Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: rgba(255, 255, 255, 0.838);
+    font-size: 40px;
+    font-weight: bold;
+    width: 750px;
+    text-align: center;
+}
+.center .buttons{
+    margin: 35px 280px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size:18px;
+    color: white;
+    background: rgb(45, 120, 182);
+    border: solid 1px white;
+    cursor: pointer;
 }
